@@ -34,13 +34,13 @@ public class RhythmZone : MonoBehaviour
         particles.Play();
         Destroy(objectInTrigger);
         objectInTrigger = null;
-        Debug.Log("Success");
+        GameManager.instance.AddScore(10);
     }
 
     private void Failed()
     {
         CameraShake.instance.ShakeCamera(5f, 0.25f);
-        Debug.Log("Failed");
+        GameManager.instance.AddScore(-1);
     }
 
     private void OnTriggerEnter(Collider other)

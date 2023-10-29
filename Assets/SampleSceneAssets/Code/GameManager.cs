@@ -1,15 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.SceneManagement;
 using UnityEngine;
-using static Unity.VisualScripting.Member;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public Action onScoreChanged;
+
     public MusicData musicSelect;
-    private AudioSource source;
+    public AudioSource source;
+
+    public int currentScore;
 
     private void Awake()
     {
@@ -25,6 +29,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void AddScore(int scoreToAdd)
+    {
+        currentScore = Mathf.Clamp(currentScore + scoreToAdd, 0, int.MaxValue);
+        onScoreChanged?.Invoke();
+    }
+
     private void Start()
     {
         source = gameObject.AddComponent<AudioSource>();
@@ -33,11 +43,5 @@ public class GameManager : MonoBehaviour
     public void SetMusicToPlay(MusicData musicSelect)
     {
         this.musicSelect = musicSelect;
-    }
-
-    public void StartGame()
-    {
-        source.clip = musicSelect.music;
-        source.Play();
     }
 }
