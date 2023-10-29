@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a33ded67d6c97944841519b528a27cc, type: 3}
+  m_Name: "Les quatres saisons - Et\xE9 (Vivaldi)"
+  m_EditorClassIdentifier: 
+  title: "Les quatres saisons - Et\xE9 (Vivaldi)"
+  author: Daniel Bautista
+  description: 'Source: https://www.danielbautista.com
+
+    License: https://creativecommons.org/licenses/by-nc-sa/2.5/es/
+
+    Download:
+    https://www.auboutdufil.com'
+  tempo: 200
+  difficulty: 6
+  music: {fileID: 8300000, guid: 8e1994ac8f719ce4a980a86ceabf0c64, type: 3}
+  map: {fileID: 4900000, guid: 9c94fa135b42e7049b58272ba1f8744c, type: 3}
