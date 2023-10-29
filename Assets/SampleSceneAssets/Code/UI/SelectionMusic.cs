@@ -11,6 +11,7 @@ public class SelectionMusic : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI titleMesh;
     [SerializeField] private TextMeshProUGUI authorMesh;
+    [SerializeField] private RawImage firstImage;
 
     private void Start()
     {
@@ -26,6 +27,8 @@ public class SelectionMusic : MonoBehaviour
             MusicItem musicItemScript = musicItem.GetComponent<MusicItem>();
             musicItemScript.SetTitle(data.title);
             musicItemScript.SetAuthor(data.author);
+            musicItemScript.SetDifficulty(data.difficulty);
+            musicItemScript.SetFirstImage(data.firstImage);
         }
 
         musicItemListTransform.GetComponent<VerticalLayoutGroup>().CalculateLayoutInputVertical();
@@ -36,5 +39,6 @@ public class SelectionMusic : MonoBehaviour
         GameManager.instance.SetMusicToPlay(data);
         titleMesh.text = data.title;
         authorMesh.text = data.author;
+        firstImage.texture = data.firstImage;
     }
 }

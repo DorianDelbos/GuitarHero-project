@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: I Can't Stop
   author: Punch Deck
+  firstImage: {fileID: 2800000, guid: d0d9aa7840c4ed8448b0a949909653b8, type: 3}
   description: 'Source: https://soundcloud.com/punch-deck
 
     Licence: https://creativecommons.org/licenses/by/4.0/deed.fr
@@ -24,4 +25,4 @@ MonoBehaviour:
   beattsPerMeasure: 8
   difficulty: 3
   music: {fileID: 8300000, guid: f62d73f278d78e747acc27cc8ae95eda, type: 3}
-  map: {fileID: 4900000, guid: 9c94fa135b42e7049b58272ba1f8744c, type: 3}
+  map: {fileID: 4900000, guid: 9f88dc94fde75ec4294617a79d92dd7c, type: 3}

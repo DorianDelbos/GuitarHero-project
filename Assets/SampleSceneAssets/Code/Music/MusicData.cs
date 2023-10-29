@@ -8,6 +8,7 @@ public class MusicData : ScriptableObject
 {
     public string title = "NONE";
     public string author = "NONE";
+    public Texture firstImage;
     [TextArea(5, 10)] public string description = "";
     [Range(30, 300)] public int beatPerMinutes = 100;
     [Range(1, 20)] public short beattsPerMeasure = 4;

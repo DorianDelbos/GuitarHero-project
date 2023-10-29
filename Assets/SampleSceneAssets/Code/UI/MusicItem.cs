@@ -6,13 +6,15 @@ using UnityEngine.UI;
 
 public class MusicItem : MonoBehaviour
 {
-    [SerializeField] private Image firstImage;
+    [SerializeField] private RawImage firstImage;
     [SerializeField] private TextMeshProUGUI titleMesh;
     [SerializeField] private TextMeshProUGUI authorMesh;
+    [SerializeField] private GameObject difficultyGameObject;
+    [SerializeField] private Texture starFullTexture;
 
-    public void SetFirstImage(Image image)
+    public void SetFirstImage(Texture image)
     {
-        firstImage = image;
+        firstImage.texture = image;
     }
 
     public void SetTitle(string title)
@@ -23,5 +25,15 @@ public class MusicItem : MonoBehaviour
     public void SetAuthor(string author)
     {
         authorMesh.text = author;
+    }
+
+    public void SetDifficulty(int difficulty)
+    {
+        difficulty = Mathf.Clamp(difficulty, 1, 8);
+
+        for (int i = 0; i < difficulty; i++)
+        {
+            difficultyGameObject.transform.GetChild(i).GetComponent<RawImage>().texture = starFullTexture;
+        }
     }
 }
