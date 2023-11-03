@@ -160,6 +160,82 @@ Transform:
   - {fileID: 1923624329}
   m_Father: {fileID: 1449359394}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &29592334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 29592335}
+  - component: {fileID: 29592336}
+  m_Layer: 0
+  m_Name: MusicByScore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &29592335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29592334}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1670597729}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &29592336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29592334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccebcf1f10c8e84eb1daa03a8158ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  songToPlayRef:
+  - Guid:
+      Data1: 555215541
+      Data2: 1152508308
+      Data3: 909633418
+      Data4: 1262310207
+    Path: event:/TomSound/Bass
+  - Guid:
+      Data1: 58443672
+      Data2: 1301889733
+      Data3: 1639717811
+      Data4: -666687345
+    Path: event:/TomSound/Drum
+  - Guid:
+      Data1: -1229906734
+      Data2: 1222685230
+      Data3: 230368132
+      Data4: 119034159
+    Path: event:/TomSound/Guitar
+  - Guid:
+      Data1: 655439843
+      Data2: 1185797196
+      Data3: -237860723
+      Data4: 1626867578
+    Path: event:/TomSound/Organ
+  leadSongRef:
+    Guid:
+      Data1: -1318040336
+      Data2: 1188882331
+      Data3: -1856466796
+      Data4: 147032734
+    Path: event:/TomSound/Lead
 --- !u!1 &48020965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,6 +1137,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 566510792553441458, guid: 30fbabde23da11b4c962d70b227b7617,
         type: 3}
+      propertyPath: toScored
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 566510792553441458, guid: 30fbabde23da11b4c962d70b227b7617,
+        type: 3}
       propertyPath: visuelPressButton
       value: 
       objectReference: {fileID: 1108116782}
@@ -1321,6 +1402,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5873698734032198112, guid: 34cbc2a624be9274f96be5b4ecd62559,
         type: 3}
+    - target: {fileID: 566510792553441458, guid: 30fbabde23da11b4c962d70b227b7617,
+        type: 3}
+      propertyPath: toScored
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 566510792553441458, guid: 30fbabde23da11b4c962d70b227b7617,
         type: 3}
       propertyPath: visuelPressButton
@@ -1699,6 +1785,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5929350717050218843, guid: 34cbc2a624be9274f96be5b4ecd62559,
         type: 3}
+    - target: {fileID: 566510792553441458, guid: 30fbabde23da11b4c962d70b227b7617,
+        type: 3}
+      propertyPath: toScored
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 566510792553441458, guid: 30fbabde23da11b4c962d70b227b7617,
         type: 3}
       propertyPath: visuelPressButton
@@ -3779,6 +3870,7 @@ Transform:
   - {fileID: 84437890}
   - {fileID: 1785744984}
   - {fileID: 1978596363}
+  - {fileID: 29592335}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1785744983

@@ -18,13 +18,20 @@ public class InGameManager : MonoBehaviour
 
     private void Update()
     {
-        timeTextMesh.text = FormatTime((int)musicLength.value) + " / " + FormatTime((int)musicLength.maxValue);
-        musicLength.value = GameManager.instance.source.time;
+        if (GameManager.instance.musicSelect.TomSound)
+        {
+            timeTextMesh.text = "infinite";
+        }
+        else
+        {
+            timeTextMesh.text = FormatTime((int)musicLength.value) + " / " + FormatTime((int)musicLength.maxValue);
+            musicLength.value = GameManager.instance.source.time;
+        }
     }
 
     private void UpdateScoreText()
     {
-        currentScoreMesh.text = "CURRENT SCORE   " + GameManager.instance.currentScore.ToString("D5");
+        currentScoreMesh.text = "CURRENT SCORE   " + GameManager.instance.averageScore.ToString("D5");
     }
 
     private string FormatTime(int seconds)
@@ -39,6 +46,9 @@ public class InGameManager : MonoBehaviour
 
     public void StartGame()
     {
+        if (GameManager.instance.musicSelect.TomSound)
+            return;
+
         GameManager.instance.source.clip = GameManager.instance.musicSelect.music;
         GameManager.instance.source.Play();
     }

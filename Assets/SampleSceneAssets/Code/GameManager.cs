@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
     public MusicData musicSelect;
     public AudioSource source;
 
-    public int currentScore;
+    public int[] scoreToAverage = new int[4];
+    public int averageScore;
 
     private void Awake()
     {
@@ -26,15 +27,36 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void AddScore(int scoreToAdd)
-    {
-        currentScore = Mathf.Clamp(currentScore + scoreToAdd, 0, int.MaxValue);
-        onScoreChanged?.Invoke();
-    }
-
     private void Start()
     {
         source = gameObject.AddComponent<AudioSource>();
+
+        for (int i = 0; i < scoreToAverage.Length; i++)
+        {
+            scoreToAverage[i] = 900;
+        }
+
+        AverageCalculate();
+        onScoreChanged?.Invoke();
+    }
+
+    public void AddScore(int toAverage, int scoreToAdd)
+    {
+        scoreToAverage[toAverage] = Mathf.Clamp(scoreToAverage[toAverage] + scoreToAdd, 0, 999);
+        AverageCalculate();
+        MusicByScore.instance.SetParameter(toAverage, scoreToAverage[toAverage], averageScore);
+    }
+
+    private void AverageCalculate()
+    {
+        averageScore = 0;
+        for (int i = 0; i < scoreToAverage.Length; i++)
+        {
+            averageScore += scoreToAverage[i];
+        }
+        averageScore /= scoreToAverage.Length;
+
+        onScoreChanged?.Invoke();
     }
 
     public void SetMusicToPlay(MusicData musicSelect)

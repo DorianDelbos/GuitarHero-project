@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMODUnity;
+using FMOD.Studio;
+using System.Diagnostics.Tracing;
 
 public class RhythmZone : MonoBehaviour
 {
@@ -9,7 +12,10 @@ public class RhythmZone : MonoBehaviour
     [SerializeField] private ParticleSystem particles;
     [SerializeField] private GameObject visuelPressButton;
     [SerializeField] private Color colorPressButton;
+    [SerializeField] private int toScored;
     private GameObject objectInTrigger;
+
+    [SerializeField] private EventInstance songToPlay;
 
     private void Start()
     {
@@ -37,6 +43,9 @@ public class RhythmZone : MonoBehaviour
             {
                 Failed();
             }
+
+            if (songToPlay.isValid())
+                songToPlay.setParameterByName("Score", GameManager.instance.scoreToAverage[toScored]);
         }
     }
 
@@ -45,13 +54,13 @@ public class RhythmZone : MonoBehaviour
         particles.Play();
         Destroy(objectInTrigger);
         objectInTrigger = null;
-        GameManager.instance.AddScore(10);
+        GameManager.instance.AddScore(toScored, 10);
     }
 
     private void Failed()
     {
         CameraShake.instance.ShakeCamera(5f, 0.25f);
-        GameManager.instance.AddScore(-1);
+        GameManager.instance.AddScore(toScored, -10);
     }
 
     private void OnTriggerEnter(Collider other)

@@ -13,4 +13,5 @@ public class MusicData : ScriptableObject
     public bool randomMap;
     public int mapLength;
     public TextAsset map;
+    public bool TomSound;
 }

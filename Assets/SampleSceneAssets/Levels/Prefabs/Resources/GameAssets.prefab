@@ -47,3 +47,4 @@ MonoBehaviour:
   musicDatas:
   - {fileID: 11400000, guid: 57d85e95fe9016f40856135edb94bd65, type: 2}
   - {fileID: 11400000, guid: 43088324f38f3364593613bfe1316734, type: 2}
+  - {fileID: 11400000, guid: 4788c19c30ec1be46a5d1fc1baf48fe8, type: 2}

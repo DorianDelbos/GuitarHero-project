@@ -1,5 +1,245 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7890290445874002744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod/GuitarHero/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638346394864057983
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &-7120314315760072221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bass/Score
+  m_EditorClassIdentifier: 
+  Name: Score
+  StudioPath: 
+  Min: 0
+  Max: 999
+  Default: 0
+  ID:
+    data1: 237784373
+    data2: 3625917103
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6416174337971733432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TomSound/Organ
+  m_EditorClassIdentifier: 
+  Path: event:/TomSound/Organ
+  Guid:
+    Data1: 655439843
+    Data2: 1185797196
+    Data3: -237860723
+    Data4: 1626867578
+  Banks:
+  - {fileID: -5024265067888500727}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5969480823806410600}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 96000
+--- !u!114 &-6209930173507757348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TomSound/Drum
+  m_EditorClassIdentifier: 
+  Path: event:/TomSound/Drum
+  Guid:
+    Data1: 58443672
+    Data2: 1301889733
+    Data3: 1639717811
+    Data4: -666687345
+  Banks:
+  - {fileID: -5024265067888500727}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1916504825516392221}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 96000
+--- !u!114 &-5969480823806410600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Organ/Score
+  m_EditorClassIdentifier: 
+  Name: Score
+  StudioPath: 
+  Min: 0
+  Max: 999
+  Default: 0
+  ID:
+    data1: 237784373
+    data2: 3625917103
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5913689342484582773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lead/Score
+  m_EditorClassIdentifier: 
+  Name: Score
+  StudioPath: 
+  Min: 0
+  Max: 999
+  Default: 0
+  ID:
+    data1: 237784373
+    data2: 3625917103
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5715975364335687926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TomSound/Bass
+  m_EditorClassIdentifier: 
+  Path: event:/TomSound/Bass
+  Guid:
+    Data1: 555215541
+    Data2: 1152508308
+    Data3: 909633418
+    Data4: 1262310207
+  Banks:
+  - {fileID: -5024265067888500727}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7120314315760072221}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 96093
+--- !u!114 &-5024265067888500727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/TomSound.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod/GuitarHero/Build/Desktop/TomSound.bank
+  Name: TomSound
+  StudioPath: bank:/TomSound
+  lastModified: 638346394894996185
+  FileSizes:
+  - Name: Desktop
+    Value: 16973344
+  Exists: 1
+--- !u!114 &-3873842702857985530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Guitar/Score
+  m_EditorClassIdentifier: 
+  Name: Score
+  StudioPath: 
+  Min: 0
+  Max: 999
+  Default: 0
+  ID:
+    data1: 237784373
+    data2: 3625917103
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3511609877919554275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod/GuitarHero/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638346394864077930
+  FileSizes:
+  - Name: Desktop
+    Value: 1016
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +252,100 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: -3511609877919554275}
+  - {fileID: -7890290445874002744}
+  - {fileID: -5024265067888500727}
+  EditorEvents:
+  - {fileID: -6209930173507757348}
+  - {fileID: -5715975364335687926}
+  - {fileID: 4720341249396759537}
+  - {fileID: -6416174337971733432}
+  - {fileID: 3778997747944585661}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  cacheTime: 0
+  MasterBanks:
+  - {fileID: -7890290445874002744}
+  StringsBanks:
+  - {fileID: -3511609877919554275}
+  cacheTime: 638346394894996185
   cacheVersion: 131608
+--- !u!114 &1916504825516392221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Drum/Score
+  m_EditorClassIdentifier: 
+  Name: Score
+  StudioPath: 
+  Min: 0
+  Max: 999
+  Default: 0
+  ID:
+    data1: 237784373
+    data2: 3625917103
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &3778997747944585661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TomSound/Lead
+  m_EditorClassIdentifier: 
+  Path: event:/TomSound/Lead
+  Guid:
+    Data1: -1318040336
+    Data2: 1188882331
+    Data3: -1856466796
+    Data4: 147032734
+  Banks:
+  - {fileID: -5024265067888500727}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5913689342484582773}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 96000
+--- !u!114 &4720341249396759537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TomSound/Guitar
+  m_EditorClassIdentifier: 
+  Path: event:/TomSound/Guitar
+  Guid:
+    Data1: -1229906734
+    Data2: 1222685230
+    Data3: 230368132
+    Data4: 119034159
+  Banks:
+  - {fileID: -5024265067888500727}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3873842702857985530}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 96000
