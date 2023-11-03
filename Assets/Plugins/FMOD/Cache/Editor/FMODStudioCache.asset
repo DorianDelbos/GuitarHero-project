@@ -66,7 +66,7 @@ MonoBehaviour:
   - {fileID: -5024265067888500727}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -5969480823806410600}
   MinDistance: 1
@@ -94,7 +94,7 @@ MonoBehaviour:
   - {fileID: -5024265067888500727}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: 1916504825516392221}
   MinDistance: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
   - {fileID: -5024265067888500727}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -7120314315760072221}
   MinDistance: 1
@@ -191,10 +191,10 @@ MonoBehaviour:
   Path: Fmod/GuitarHero/Build/Desktop/TomSound.bank
   Name: TomSound
   StudioPath: bank:/TomSound
-  lastModified: 638346394894996185
+  lastModified: 638346403602369613
   FileSizes:
   - Name: Desktop
-    Value: 16973344
+    Value: 16973984
   Exists: 1
 --- !u!114 &-3873842702857985530
 MonoBehaviour:
@@ -267,7 +267,7 @@ MonoBehaviour:
   - {fileID: -7890290445874002744}
   StringsBanks:
   - {fileID: -3511609877919554275}
-  cacheTime: 638346394894996185
+  cacheTime: 638346403602369613
   cacheVersion: 131608
 --- !u!114 &1916504825516392221
 MonoBehaviour:
@@ -315,7 +315,7 @@ MonoBehaviour:
   - {fileID: -5024265067888500727}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -5913689342484582773}
   MinDistance: 1
@@ -343,7 +343,7 @@ MonoBehaviour:
   - {fileID: -5024265067888500727}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -3873842702857985530}
   MinDistance: 1
