@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{b0037738-c7fb-40dc-88ce-0bc3ff18e265}">
+		<property name="assetPath">
+			<value>TomSound/Guitar/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3ce66928-f1ff-4f44-9ae0-951de930cac6}</destination>
+		</relationship>
+	</object>
+</objects>

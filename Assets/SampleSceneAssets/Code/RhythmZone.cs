@@ -10,7 +10,6 @@ public class RhythmZone : MonoBehaviour
     [SerializeField] private GameObject visuelPressButton;
     [SerializeField] private Color colorPressButton;
     private GameObject objectInTrigger;
-    private Coroutine coroutine;
 
     private void Start()
     {
@@ -19,15 +18,17 @@ public class RhythmZone : MonoBehaviour
 
     private void Update()
     {
-        if (input.action.WasPerformedThisFrame())
+        if (input.action.IsPressed())
         {
             visuelPressButton.GetComponent<MeshRenderer>().material.color = colorPressButton;
+        }
+        else
+        {
+            visuelPressButton.GetComponent<MeshRenderer>().material.color = Color.white;
+        }
 
-            if (coroutine == null)
-            {
-                coroutine = StartCoroutine(ResetButton());
-            }
-
+        if (input.action.WasPerformedThisFrame())
+        {
             if (objectInTrigger)
             {
                 Success();
@@ -67,13 +68,5 @@ public class RhythmZone : MonoBehaviour
             objectInTrigger = null;
             other.GetComponent<MeshRenderer>().material.color = Color.red;
         }
-    }
-
-    private IEnumerator ResetButton()
-    {
-        yield return new WaitForSeconds(0.1f);
-
-        visuelPressButton.GetComponent<MeshRenderer>().material.color = Color.white;
-        coroutine = null;
     }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6bd3c7ae-4a92-44e4-aefb-9e9c012dfc3f}">
+		<property name="assetPath">
+			<value>TomSound/Organ/Organ_Good.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>96</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3ce66928-f1ff-4f44-9ae0-951de930cac6}</destination>
+		</relationship>
+	</object>
+</objects>
