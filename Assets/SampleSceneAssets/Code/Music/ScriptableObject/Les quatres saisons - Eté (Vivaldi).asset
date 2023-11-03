@@ -21,8 +21,9 @@ MonoBehaviour:
 
     Download:
     https://www.auboutdufil.com'
-  beatPerMinutes: 100
-  beattsPerMeasure: 4
+  beatPerMinutes: 300
   difficulty: 6
   music: {fileID: 8300000, guid: 8e1994ac8f719ce4a980a86ceabf0c64, type: 3}
+  randomMap: 1
+  mapLength: 500
   map: {fileID: 4900000, guid: 9c94fa135b42e7049b58272ba1f8744c, type: 3}

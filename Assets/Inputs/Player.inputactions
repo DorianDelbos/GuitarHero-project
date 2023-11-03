@@ -65,6 +65,17 @@
                 },
                 {
                     "name": "",
+                    "id": "94b633c1-7685-4bae-9631-c932fe552012",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Area2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "65b44abc-d7e7-4cad-9ac7-36596ade36b1",
                     "path": "<Keyboard>/o",
                     "interactions": "",
@@ -98,12 +109,45 @@
                 },
                 {
                     "name": "",
+                    "id": "a9cbd9cb-9f40-4987-af72-9e70838be1f3",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Area1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "a264e87b-d4f9-4663-9061-d48a5384639d",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "44092ce5-ffa3-4f9c-ae1a-e00e077156c5",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Area4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4060e7a-19ed-4a38-8a00-79a3fb6cdba4",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Area3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
