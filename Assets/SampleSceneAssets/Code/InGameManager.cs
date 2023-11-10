@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class InGameManager : MonoBehaviour
@@ -11,21 +12,22 @@ public class InGameManager : MonoBehaviour
     void Start()
     {
         GameManager.instance.onScoreChanged += UpdateScoreText;
-        StartGame();
 
-        musicLength.maxValue = (int)GameManager.instance.musicSelect.music.length;
+        MusicByScore.instance.SetMusic(GameManager.instance.musicSelect);
+        MusicByScore.instance.StartGame();
+
+        musicLength.maxValue = (int)GameManager.instance.musicSelect.timeInSeconds;
     }
 
     private void Update()
     {
-        if (GameManager.instance.musicSelect.TomSound)
+        timeTextMesh.text = FormatTime((int)musicLength.value) + " / " + FormatTime((int)musicLength.maxValue);
+        musicLength.value = MusicByScore.instance.currentTime;
+
+        if (musicLength.value >= musicLength.maxValue)
         {
-            timeTextMesh.text = "infinite";
-        }
-        else
-        {
-            timeTextMesh.text = FormatTime((int)musicLength.value) + " / " + FormatTime((int)musicLength.maxValue);
-            musicLength.value = GameManager.instance.source.time;
+            MusicByScore.instance.StopGame();
+            SceneManager.LoadScene("MainMenu");
         }
     }
 
@@ -44,18 +46,9 @@ public class InGameManager : MonoBehaviour
         return formattedTime;
     }
 
-    public void StartGame()
-    {
-        if (GameManager.instance.musicSelect.TomSound)
-            return;
-
-        GameManager.instance.source.clip = GameManager.instance.musicSelect.music;
-        GameManager.instance.source.Play();
-    }
-
     public void StopGame()
     {
         Time.timeScale = 1f;
-        GameManager.instance.source.Stop();
+        MusicByScore.instance.StopGame();
     }
 }

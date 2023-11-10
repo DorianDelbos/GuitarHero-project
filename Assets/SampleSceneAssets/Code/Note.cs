@@ -10,7 +10,7 @@ public class Note : MonoBehaviour
 
     private void Start()
     {
-        musicLength = GameManager.instance.musicSelect.music.length * 100;
+        musicLength = GameManager.instance.musicSelect.timeInSeconds * 100;
 
         lastPos = Vector3.zero;
         lastPos.z = -(musicLength / 60f * GameManager.instance.musicSelect.beatPerMinutes) * 10;
@@ -21,7 +21,7 @@ public class Note : MonoBehaviour
         currentTime = Mathf.Clamp(currentTime + Time.deltaTime, 0f, musicLength);
         transform.position = Vector3.Lerp(Vector3.zero, lastPos, currentTime / musicLength);
 
-        if (currentTime >= musicLength && !GameManager.instance.musicSelect.TomSound)
+        if (currentTime >= musicLength)
         {
             Debug.Log("End");
         }

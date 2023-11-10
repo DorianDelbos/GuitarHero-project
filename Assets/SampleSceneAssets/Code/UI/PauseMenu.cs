@@ -20,9 +20,9 @@ public class PauseMenu : MonoBehaviour
     public void ChangePauseState()
     {
         if (pausePanel.activeSelf)
-            GameManager.instance.source.UnPause();
+            MusicByScore.instance.PauseGame();
         else
-            GameManager.instance.source.Pause();
+            MusicByScore.instance.UnPauseGame();
 
         Time.timeScale = (pausePanel.activeSelf ? 1f : 0f);
         toggleAllsPanels(pausePanel.activeSelf);

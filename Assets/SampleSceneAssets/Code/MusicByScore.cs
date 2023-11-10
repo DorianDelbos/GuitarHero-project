@@ -8,8 +8,7 @@ public class MusicByScore : MonoBehaviour
 {
     public static MusicByScore instance;
 
-    [SerializeField] private EventReference[] songToPlayRef = new EventReference[4];
-    [SerializeField] private EventReference leadSongRef;
+    public float currentTime { get; private set; }
 
     private EventInstance[] songToPlay = new EventInstance[4];
     private EventInstance leadSong;
@@ -17,15 +16,34 @@ public class MusicByScore : MonoBehaviour
     private void Awake()
     {
         instance = this;
-
-        for (int i = 0; i < songToPlayRef.Length; i++)
-        {
-            songToPlay[i] = RuntimeManager.CreateInstance(songToPlayRef[i]);
-        }
-        leadSong = RuntimeManager.CreateInstance(leadSongRef);
     }
 
     private void Start()
+    {
+        currentTime = 0f;
+    }
+
+    private void Update()
+    {
+        currentTime += Time.deltaTime;
+    }
+
+    public void SetMusic(MusicData data)
+    {
+        for (int i = 0; i < songToPlay.Length; i++)
+        {
+            songToPlay[i] = RuntimeManager.CreateInstance(data.songByKey[i]);
+        }
+        leadSong = RuntimeManager.CreateInstance(data.leadSong);
+    }
+
+    public void SetParameter(int valToChange, int score, int averageScore)
+    {
+        songToPlay[valToChange].setParameterByName("Score", score);
+        leadSong.setParameterByName("Score", averageScore);
+    }
+
+    public void StartGame()
     {
         for (int i = 0; i < songToPlay.Length; i++)
         {
@@ -34,9 +52,30 @@ public class MusicByScore : MonoBehaviour
         leadSong.start();
     }
 
-    public void SetParameter(int valToChange, int score, int averageScore)
+    public void StopGame()
     {
-        songToPlay[valToChange].setParameterByName("Score", score);
-        leadSong.setParameterByName("Score", averageScore);
+        for (int i = 0; i < songToPlay.Length; i++)
+        {
+            songToPlay[i].stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        }
+        leadSong.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
+    public void PauseGame()
+    {
+        for (int i = 0; i < songToPlay.Length; i++)
+        {
+            songToPlay[i].setPaused(true);
+        }
+        leadSong.setPaused(true);
+    }
+
+    public void UnPauseGame()
+    {
+        for (int i = 0; i < songToPlay.Length; i++)
+        {
+            songToPlay[i].setPaused(false);
+        }
+        leadSong.setPaused(false);
     }
 }
