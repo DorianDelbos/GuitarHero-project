@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Fmod/GuitarHero/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638346394864057983
+  lastModified: 638353142489712013
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 3616
   Exists: 1
 --- !u!114 &-7120314315760072221
 MonoBehaviour:
@@ -191,10 +191,10 @@ MonoBehaviour:
   Path: Fmod/GuitarHero/Build/Desktop/TomSound.bank
   Name: TomSound
   StudioPath: bank:/TomSound
-  lastModified: 638352246283909509
+  lastModified: 638353137507288897
   FileSizes:
   - Name: Desktop
-    Value: 16973344
+    Value: 16975936
   Exists: 1
 --- !u!114 &-3873842702857985530
 MonoBehaviour:
@@ -235,10 +235,10 @@ MonoBehaviour:
   Path: Fmod/GuitarHero/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638346394864077930
+  lastModified: 638353142489721981
   FileSizes:
   - Name: Desktop
-    Value: 1016
+    Value: 1112
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -262,13 +262,42 @@ MonoBehaviour:
   - {fileID: 4720341249396759537}
   - {fileID: -6416174337971733432}
   - {fileID: 3778997747944585661}
+  - {fileID: 55696630915409928}
+  - {fileID: 6793187383798209660}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7890290445874002744}
   StringsBanks:
   - {fileID: -3511609877919554275}
-  cacheTime: 638352246283909509
+  cacheTime: 638353142489721981
   cacheVersion: 131608
+--- !u!114 &55696630915409928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TomSound/TomSoundPreview
+  m_EditorClassIdentifier: 
+  Path: event:/TomSound/TomSoundPreview
+  Guid:
+    Data1: 1472911214
+    Data2: 1313622628
+    Data3: -1301088895
+    Data4: 1813743662
+  Banks:
+  - {fileID: -5024265067888500727}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 96000
 --- !u!114 &1916504825516392221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,3 +378,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 96000
+--- !u!114 &6793187383798209660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Click
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Click
+  Guid:
+    Data1: -1084228019
+    Data2: 1166996152
+    Data3: -1025913707
+    Data4: -1347859898
+  Banks:
+  - {fileID: -7890290445874002744}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 86

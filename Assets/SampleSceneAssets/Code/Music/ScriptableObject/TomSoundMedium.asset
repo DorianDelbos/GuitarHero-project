@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a33ded67d6c97944841519b528a27cc, type: 3}
+  m_Name: TomSoundMedium
+  m_EditorClassIdentifier: 
+  title: Tom Sound (MEDIUM)
+  author: Tom
+  firstImage: {fileID: 0}
+  description: 'Source: https://soundcloud.com/punch-deck
+
+    Licence: https://creativecommons.org/licenses/by/4.0/deed.fr
+
+    Download:
+    https://www.auboutdufil.com'
+  beatPerMinutes: 120
+  difficulty: 3
+  difficultyLvl: 1
+  timeInSeconds: 96
+  songByKey:
+  - Guid:
+      Data1: 555215541
+      Data2: 1152508308
+      Data3: 909633418
+      Data4: 1262310207
+    Path: event:/TomSound/Bass
+  - Guid:
+      Data1: 58443672
+      Data2: 1301889733
+      Data3: 1639717811
+      Data4: -666687345
+    Path: event:/TomSound/Drum
+  - Guid:
+      Data1: -1229906734
+      Data2: 1222685230
+      Data3: 230368132
+      Data4: 119034159
+    Path: event:/TomSound/Guitar
+  - Guid:
+      Data1: 655439843
+      Data2: 1185797196
+      Data3: -237860723
+      Data4: 1626867578
+    Path: event:/TomSound/Organ
+  leadSong:
+    Guid:
+      Data1: -1318040336
+      Data2: 1188882331
+      Data3: -1856466796
+      Data4: 147032734
+    Path: event:/TomSound/Lead
+  previewSong:
+    Guid:
+      Data1: 1472911214
+      Data2: 1313622628
+      Data3: -1301088895
+      Data4: 1813743662
+    Path: event:/TomSound/TomSoundPreview

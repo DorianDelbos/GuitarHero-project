@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,11 @@ using UnityEngine;
 public class Menu : MonoBehaviour
 {
     public GameObject[] menus;
+
+    public void PlayButtonSound()
+    {
+        RuntimeManager.PlayOneShot("event:/UI/Click");
+    }
 
     public void OpenMenu(GameObject menu)
     {

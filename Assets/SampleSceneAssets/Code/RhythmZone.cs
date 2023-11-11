@@ -35,6 +35,8 @@ public class RhythmZone : MonoBehaviour
 
         if (input.action.WasPerformedThisFrame())
         {
+            RuntimeManager.PlayOneShot("event:/UI/Click");
+
             if (objectInTrigger)
             {
                 Success();

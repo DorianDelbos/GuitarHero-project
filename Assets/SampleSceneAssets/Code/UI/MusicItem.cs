@@ -1,3 +1,5 @@
+using FMOD.Studio;
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -11,6 +13,15 @@ public class MusicItem : MonoBehaviour
     [SerializeField] private TextMeshProUGUI authorMesh;
     [SerializeField] private GameObject difficultyGameObject;
     [SerializeField] private Texture starFullTexture;
+
+    public EventInstance previewSong { get; private set; }
+
+    public void OnClick()
+    {
+        RuntimeManager.PlayOneShot("event:/UI/Click");
+        SelectionMusic.instance.StopAllMusics();
+        previewSong.start();
+    }
 
     public void SetFirstImage(Texture image)
     {
@@ -35,5 +46,10 @@ public class MusicItem : MonoBehaviour
         {
             difficultyGameObject.transform.GetChild(i).GetComponent<RawImage>().texture = starFullTexture;
         }
+    }
+
+    public void SetPreviewSong(EventReference previewSong)
+    {
+        this.previewSong = RuntimeManager.CreateInstance(previewSong);
     }
 }

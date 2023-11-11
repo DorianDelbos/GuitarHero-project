@@ -6,12 +6,19 @@ using UnityEngine.UI;
 
 public class SelectionMusic : MonoBehaviour
 {
+    public static SelectionMusic instance;
+
     [SerializeField] private GameObject musicItemPrefab;
     [SerializeField] private Transform musicItemListTransform;
 
     [SerializeField] private TextMeshProUGUI titleMesh;
     [SerializeField] private TextMeshProUGUI authorMesh;
     [SerializeField] private RawImage firstImage;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
@@ -29,6 +36,7 @@ public class SelectionMusic : MonoBehaviour
             musicItemScript.SetAuthor(data.author);
             musicItemScript.SetDifficulty(data.difficulty);
             musicItemScript.SetFirstImage(data.firstImage);
+            musicItemScript.SetPreviewSong(data.previewSong);
         }
 
         musicItemListTransform.GetComponent<VerticalLayoutGroup>().CalculateLayoutInputVertical();
@@ -40,5 +48,16 @@ public class SelectionMusic : MonoBehaviour
         titleMesh.text = data.title;
         authorMesh.text = data.author;
         firstImage.texture = data.firstImage;
+    }
+
+    public void StopAllMusics()
+    {
+        foreach (Transform child in musicItemListTransform)
+        {
+            if (child.TryGetComponent<MusicItem>(out MusicItem comp))
+            {
+                comp.previewSong.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            }
+        }
     }
 }

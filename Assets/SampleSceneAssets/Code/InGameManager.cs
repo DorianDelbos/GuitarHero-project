@@ -27,7 +27,7 @@ public class InGameManager : MonoBehaviour
         if (musicLength.value >= musicLength.maxValue)
         {
             MusicByScore.instance.StopGame();
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("EndMenu");
         }
     }
 
@@ -44,11 +44,5 @@ public class InGameManager : MonoBehaviour
         string formattedTime = string.Format("{0:D2}:{1:D2}", minutes, remainingSeconds);
 
         return formattedTime;
-    }
-
-    public void StopGame()
-    {
-        Time.timeScale = 1f;
-        MusicByScore.instance.StopGame();
     }
 }

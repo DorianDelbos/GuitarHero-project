@@ -15,18 +15,28 @@ public class NoteSpawner : MonoBehaviour
 
     private void GenerateRandomMap(int length)
     {
+        int valByDif;
+
+        switch (GameManager.instance.musicSelect.difficultyLvl)
+        {
+            case MusicData.Difficulty.Medium:
+                valByDif = 3;
+                break;
+            case MusicData.Difficulty.Easy:
+                valByDif = 2;
+                break;
+            default:
+                valByDif = 4;
+                break;
+        }
+
+
         for (int i = 0; i < length; i++)
         {
-            for (int j = 0; j < 4; j++)
-            {
-                if (Random.Range(0, 4) == 0)
-                {
-                    Vector3 position = spawners[j].transform.position;
-                    position.z += 10 * i;
+            Vector3 position = spawners[Random.Range(0, valByDif)].transform.position;
+            position.z += 10 * i;
 
-                    Instantiate(notePrefab, position, Quaternion.identity, noteTransform);
-                }
-            }
+            Instantiate(notePrefab, position, Quaternion.identity, noteTransform);
         }
     }
 }

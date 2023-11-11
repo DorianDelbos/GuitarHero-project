@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 
     public Action onScoreChanged;
 
-    public MusicData musicSelect;
+    public MusicData musicSelect { get; private set; }
 
     public int[] scoreToAverage = new int[4];
     public int averageScore;
@@ -27,6 +27,11 @@ public class GameManager : MonoBehaviour
     }
 
     private void Start()
+    {
+        ResetScore();
+    }
+
+    public void ResetScore()
     {
         for (int i = 0; i < scoreToAverage.Length; i++)
         {

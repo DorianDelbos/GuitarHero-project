@@ -45,6 +45,8 @@ public class MusicByScore : MonoBehaviour
 
     public void StartGame()
     {
+        GameManager.instance.ResetScore();
+
         for (int i = 0; i < songToPlay.Length; i++)
         {
             songToPlay[i].start();
@@ -54,6 +56,8 @@ public class MusicByScore : MonoBehaviour
 
     public void StopGame()
     {
+        Time.timeScale = 1f;
+
         for (int i = 0; i < songToPlay.Length; i++)
         {
             songToPlay[i].stop(FMOD.Studio.STOP_MODE.IMMEDIATE);

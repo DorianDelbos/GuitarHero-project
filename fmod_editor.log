@@ -10,7 +10,7 @@
 [LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000024B21A00BC8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001FB2CFC8868 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -21,7 +21,483 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::createSound                     : filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F9C6869AF8, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F9C6869AF8
+[LOG] SystemI::createSound                     : filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001F9C6869948, queue head = 000001FA37D1C128, queue count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FB6BBCF218, queue head = 000001FA37D1C128, queue count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F822833660
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FB6BBCF068, queue head = 000001FA37D1C128, queue count = 2
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA4741F5D8, queue head = 000001FA37D1C128, queue count = 3
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bass_Good', format=5, channels=2, frequency=48000, lengthbytes=371232, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.418549.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F9C6869AF8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F9C6869948
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8228337A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Guitar_Good', format=5, channels=2, frequency=48000, lengthbytes=1224800, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.821533.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F9C6869948
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB6BBCF218
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F822833160
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Drum_Good', format=5, channels=2, frequency=48000, lengthbytes=1399232, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.959106.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB6BBCF218
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB6BBCF068
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F8228332A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Organ_Good', format=5, channels=2, frequency=48000, lengthbytes=1256192, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.610626.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB6BBCF068
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA4741F5D8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA2CE40660
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lead_GREEAAAAAT', format=5, channels=2, frequency=48000, lengthbytes=1526048, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.699310.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA4741F5D8
+[LOG] SystemI::createSound                     : filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FA4741F0C8, queue head = 000001FA37D1C128, queue count = 0
+[LOG] SystemI::createSound                     : filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FB2E2BB488, queue head = 000001FA37D1C128, queue count = 1
+[LOG] SystemI::createSound                     : filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA4741F0C8
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FB2E2BB128, queue head = 000001FA37D1C128, queue count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FB2E2BB638, queue head = 000001FA37D1C128, queue count = 2
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA2CE407A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FB2E2BADC8, queue head = 000001FA37D1C128, queue count = 3
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA37898F68, queue head = 000001FA37D1C128, queue count = 4
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA378988A8, queue head = 000001FA37D1C128, queue count = 5
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA37898DB8, queue head = 000001FA37D1C128, queue count = 6
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA378986F8, queue head = 000001FA37D1C128, queue count = 7
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bass_go_to_hell_plz', format=5, channels=2, frequency=48000, lengthbytes=201248, lengthpcm=4612500, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.396912.
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA37898C08, queue head = 000001FA37D1C128, queue count = 8
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA422D10C8, queue head = 000001FA37D1C128, queue count = 9
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA422D0F18, queue head = 000001FA37D1C128, queue count = 10
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA422D0858, queue head = 000001FA37D1C128, queue count = 11
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA422D0BB8, queue head = 000001FA37D1C128, queue count = 12
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA42C92078, queue head = 000001FA37D1C128, queue count = 13
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA42C928E8, queue head = 000001FA37D1C128, queue count = 14
+[LOG] SystemI::createSound                     :     filename = Fmod/GuitarHero/Build/Desktop/TomSound.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FA42C92228, queue head = 000001FA37D1C128, queue count = 15
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA4741F0C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E2BB488
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA2CE40B60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bass_bad', format=5, channels=2, frequency=48000, lengthbytes=392928, lengthpcm=4612499, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.406219.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E2BB488
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E2BB128
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA2CE403E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bass_Good', format=5, channels=2, frequency=48000, lengthbytes=371232, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.418549.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E2BB128
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E2BB638
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA2CE40160
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bass_not_that_bad', format=5, channels=2, frequency=48000, lengthbytes=404672, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.406250.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E2BB638
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E2BADC8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA2CE408E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Drum_go_to_hell_plz', format=5, channels=2, frequency=48000, lengthbytes=1407296, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.949799.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E2BADC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA37898F68
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA2CE40A20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Drum_Good', format=5, channels=2, frequency=48000, lengthbytes=1399232, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.959106.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA37898F68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA378988A8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA2CE3FEE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Drum_not_that_bad', format=5, channels=2, frequency=48000, lengthbytes=1401248, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.970367.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA378988A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA37898DB8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA2CE40CA0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Drum_bad', format=5, channels=2, frequency=48000, lengthbytes=1405600, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.944946.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA37898DB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA378986F8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA2CE40020
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Guitar_Good', format=5, channels=2, frequency=48000, lengthbytes=1224800, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.821533.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA378986F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA37898C08
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FA2CE402A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Guitar_bad', format=5, channels=2, frequency=48000, lengthbytes=1187296, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.871643.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA37898C08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA422D10C8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F822F34E60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Guitar_not_that_bad', format=5, channels=2, frequency=48000, lengthbytes=1230592, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.786346.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA422D10C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA422D0F18
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F822F34FA0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Guitar_go_to_hell_plz', format=5, channels=2, frequency=48000, lengthbytes=439776, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.774292.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA422D0F18
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA422D0858
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F822F350E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Organ_go_to_hell_plz', format=5, channels=2, frequency=48000, lengthbytes=667040, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.574005.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA422D0858
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA422D0BB8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F822F34BE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Organ_not_that_bad', format=5, channels=2, frequency=48000, lengthbytes=1236672, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.574005.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA422D0BB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA42C92078
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F822F354A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Organ_bad', format=5, channels=2, frequency=48000, lengthbytes=1064896, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.574005.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA42C92078
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA42C928E8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F822F359A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Organ_Good', format=5, channels=2, frequency=48000, lengthbytes=1256192, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.610626.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA42C928E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FA42C92228
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/GuitarHero/Build/Desktop/TomSound.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 16830688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 145248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F822F355E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lead_GREEAAAAAT', format=5, channels=2, frequency=48000, lengthbytes=1526048, lengthpcm=4608000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.699310.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FA42C92228
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FB2E9014A8, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E9014A8
+[LOG] SystemI::createSoundInternal             :     Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1536
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2080
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000003605EAF4A8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FFC20163FA0
+[LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FFC20163F60
+[LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FFC20164080
+[LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FFC20164140
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 000001F9C6706288
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             :     Sample 0/1: name='click3', format=5, channels=2, frequency=48000, lengthbytes=1408, lengthpcm=4134, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.713501.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E9014A8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F822A8D8C8, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F822A8D8C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F822A8D8C8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F822A8DA78, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F822A8DA78
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F822A8DA78
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FB2E9012F8, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E9012F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E9012F8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FB2E901148, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E901148
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E901148
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F822A8E138, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F822A8E138
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F822A8E138
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F822A8DF88, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F822A8DF88
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F822A8DF88
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FB2E9012F8, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E9012F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E9012F8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FB2E901808, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E901808
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E901808
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FB2E901808, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E901808
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F822A8E138, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001F822A8DF88, queue head = 000001FA37D1C128, queue count = 1
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FB2E9012F8, queue head = 000001FA37D1C128, queue count = 2
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E901808
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F822A8E138
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F822A8E138
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F822A8DF88
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F822A8DF88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E9012F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E9012F8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001FB2E901808, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E901808
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001F822A8E138, queue head = 000001FA37D1C128, queue count = 0
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001F822A8DF88, queue head = 000001FA37D1C128, queue count = 1
+[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 000001FB2E9012F8, queue head = 000001FA37D1C128, queue count = 2
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E901808
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F822A8E138
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F822A8E138
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F822A8DF88
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F822A8DF88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FB2E9012F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FB2E9012F8
+[LOG] SoundI::release                          : Lead_GREEAAAAAT (000001FA42C92228)
+[LOG] SoundI::release                          :     Lead_GREEAAAAAT (000001F822DE7B48)
+[LOG] SoundI::release                          :     Lead_GREEAAAAAT (000001F822A8D568)
+[LOG] SoundI::release                          : Organ_Good (000001FA42C928E8)
+[LOG] SoundI::release                          :     Organ_Good (000001FB31650808)
+[LOG] SoundI::release                          :     Organ_Good (000001F822A8DA78)
+[LOG] SoundI::release                          : Organ_bad (000001FA42C92078)
+[LOG] SoundI::release                          :     Organ_bad (000001FB31651028)
+[LOG] SoundI::release                          :     Organ_bad (000001F822A8E2E8)
+[LOG] SoundI::release                          : Organ_not_that_bad (000001FA422D0BB8)
+[LOG] SoundI::release                          :     Organ_not_that_bad (000001FB31650B48)
+[LOG] SoundI::release                          :     Organ_not_that_bad (000001F822A8DF88)
+[LOG] SoundI::release                          : Organ_go_to_hell_plz (000001FA422D0858)
+[LOG] SoundI::release                          :     Organ_go_to_hell_plz (000001FB31650CE8)
+[LOG] SoundI::release                          :     Organ_go_to_hell_plz (000001F822A8D718)
+[LOG] SoundI::release                          : Guitar_go_to_hell_plz (000001FA422D0F18)
+[LOG] SoundI::release                          :     Guitar_go_to_hell_plz (000001FB316509A8)
+[LOG] SoundI::release                          :     Guitar_go_to_hell_plz (000001F822A8DDD8)
+[LOG] SoundI::release                          : Guitar_not_that_bad (000001FA422D10C8)
+[LOG] SoundI::release                          :     Guitar_not_that_bad (000001FA378A33F8)
+[LOG] SoundI::release                          :     Guitar_not_that_bad (000001F822A8E138)
+[LOG] SoundI::release                          : Guitar_bad (000001FA37898C08)
+[LOG] SoundI::release                          :     Guitar_bad (000001FA378A3A78)
+[LOG] SoundI::release                          :     Guitar_bad (000001F822A8DC28)
+[LOG] SoundI::release                          : Guitar_Good (000001FA378986F8)
+[LOG] SoundI::release                          :     Guitar_Good (000001FA378A38D8)
+[LOG] SoundI::release                          :     Guitar_Good (000001F822A8D8C8)
+[LOG] SoundI::release                          : Drum_bad (000001FA37898DB8)
+[LOG] SoundI::release                          :     Drum_bad (000001FA378A3F58)
+[LOG] SoundI::release                          :     Drum_bad (000001FB2E901658)
+[LOG] SoundI::release                          : Drum_not_that_bad (000001FA378988A8)
+[LOG] SoundI::release                          :     Drum_not_that_bad (000001FB03F64C38)
+[LOG] SoundI::release                          :     Drum_not_that_bad (000001FB2E901808)
+[LOG] SoundI::release                          : Drum_Good (000001FA37898F68)
+[LOG] SoundI::release                          :     Drum_Good (000001FB03F645B8)
+[LOG] SoundI::release                          :     Drum_Good (000001FB2E9014A8)
+[LOG] SoundI::release                          : Drum_go_to_hell_plz (000001FB2E2BADC8)
+[LOG] SoundI::release                          :     Drum_go_to_hell_plz (000001FB03F64A98)
+[LOG] SoundI::release                          :     Drum_go_to_hell_plz (000001FB2E900C38)
+[LOG] SoundI::release                          : Bass_not_that_bad (000001FB2E2BB638)
+[LOG] SoundI::release                          :     Bass_not_that_bad (000001FB03F648F8)
+[LOG] SoundI::release                          :     Bass_not_that_bad (000001FB2E9012F8)
+[LOG] SoundI::release                          : Bass_Good (000001FB2E2BB128)
+[LOG] SoundI::release                          :     Bass_Good (000001FB03F64278)
+[LOG] SoundI::release                          :     Bass_Good (000001FB2E901148)
+[LOG] SoundI::release                          : Bass_bad (000001FB2E2BB488)
+[LOG] SoundI::release                          :     Bass_bad (000001FB2B436098)
+[LOG] SoundI::release                          :     Bass_bad (000001FB2E900F98)
+[LOG] SoundI::release                          : Bass_go_to_hell_plz (000001FA4741F0C8)
+[LOG] SoundI::release                          :     Bass_go_to_hell_plz (000001FB2B435D58)
+[LOG] SoundI::release                          :     Bass_go_to_hell_plz (000001FB2E9019B8)
+[LOG] SoundI::release                          : Lead_GREEAAAAAT (000001FA4741F5D8)
+[LOG] SoundI::release                          :     Lead_GREEAAAAAT (000001FB2B435A18)
+[LOG] SoundI::release                          :     Lead_GREEAAAAAT (000001FB2E900DE8)
+[LOG] SoundI::release                          : Organ_Good (000001FB6BBCF068)
+[LOG] SoundI::release                          :     Organ_Good (000001FB2B4356D8)
+[LOG] SoundI::release                          :     Organ_Good (000001FA38C6DBE8)
+[LOG] SoundI::release                          : Drum_Good (000001FB6BBCF218)
+[LOG] SoundI::release                          :     Drum_Good (000001FB080CE578)
+[LOG] SoundI::release                          :     Drum_Good (000001FA38C6DA38)
+[LOG] SoundI::release                          : Guitar_Good (000001F9C6869948)
+[LOG] SoundI::release                          :     Guitar_Good (000001FB080CE718)
+[LOG] SoundI::release                          :     Guitar_Good (000001FA38C6D6D8)
+[LOG] SoundI::release                          : Bass_Good (000001F9C6869AF8)
+[LOG] SoundI::release                          :     Bass_Good (000001FA7AE179A8)
+[LOG] SoundI::release                          :     Bass_Good (000001FA38C6D888)
+[LOG] SoundI::release                          :  (000001F8A374A7B8)
+[LOG] SoundI::release                          :     click3 (000001FB2B529338)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -29,3 +505,5 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
