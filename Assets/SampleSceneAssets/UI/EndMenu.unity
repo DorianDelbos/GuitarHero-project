@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 761856401}
   - component: {fileID: 761856405}
   - component: {fileID: 761856406}
+  - component: {fileID: 761856407}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -424,6 +425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleMeshPro: {fileID: 1053041119}
   scoreMeshPro: {fileID: 1539628726}
+  emitter: {fileID: 761856407}
 --- !u!114 &761856406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,6 +439,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menus: []
+--- !u!114 &761856407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761856400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2048513963
+      Data2: 1078019827
+      Data3: 105317030
+      Data4: -562056373
+    Path: event:/UI/EndMenu
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1053041117
 GameObject:
   m_ObjectHideFlags: 0

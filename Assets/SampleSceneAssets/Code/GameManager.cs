@@ -26,11 +26,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        ResetScore();
-    }
-
     public void ResetScore()
     {
         for (int i = 0; i < scoreToAverage.Length; i++)

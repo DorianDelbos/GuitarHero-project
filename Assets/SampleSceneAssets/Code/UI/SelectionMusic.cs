@@ -54,9 +54,9 @@ public class SelectionMusic : MonoBehaviour
     {
         foreach (Transform child in musicItemListTransform)
         {
-            if (child.TryGetComponent<MusicItem>(out MusicItem comp))
+            if (child.TryGetComponent(out MusicItem comp))
             {
-                comp.previewSong.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                comp.emitter.Stop();
             }
         }
     }

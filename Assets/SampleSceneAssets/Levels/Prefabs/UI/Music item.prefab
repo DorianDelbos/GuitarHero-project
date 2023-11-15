@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 3760855587494493775}
   - component: {fileID: 1702559958658643178}
   - component: {fileID: 3846658847024951506}
+  - component: {fileID: 1394593872794015409}
   m_Layer: 0
   m_Name: Music item
   m_TagString: Untagged
@@ -368,6 +369,38 @@ MonoBehaviour:
   authorMesh: {fileID: 9157302060108755119}
   difficultyGameObject: {fileID: 719950597960788256}
   starFullTexture: {fileID: 2800000, guid: 93f8abb6df8f9f348910ec6328660560, type: 3}
+  emitter: {fileID: 1394593872794015409}
+--- !u!114 &1394593872794015409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3854388930659659317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &4044835913529520771
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class RhythmZone : MonoBehaviour
     [SerializeField] private InputActionReference input;
     [SerializeField] private ParticleSystem particles;
     [SerializeField] private GameObject visuelPressButton;
-    [SerializeField] private Color colorPressButton;
+    public Color colorPressButton;
     [SerializeField] private int toScored;
     private GameObject objectInTrigger;
 

@@ -6,6 +6,7 @@ public class NoteSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject notePrefab;
     [SerializeField] private GameObject[] spawners;
+    [SerializeField] private RhythmZone[] rhythmZone;
     [SerializeField] private Transform noteTransform;
 
     private void Start()
@@ -33,10 +34,12 @@ public class NoteSpawner : MonoBehaviour
 
         for (int i = 0; i < length; i++)
         {
-            Vector3 position = spawners[Random.Range(0, valByDif)].transform.position;
+            int rdmVal = Random.Range(0, valByDif);
+            Vector3 position = spawners[rdmVal].transform.position;
             position.z += 10 * i;
 
-            Instantiate(notePrefab, position, Quaternion.identity, noteTransform);
+            GameObject note = Instantiate(notePrefab, position, Quaternion.identity, noteTransform);
+            note.GetComponent<Renderer>().material.color = rhythmZone[rdmVal].colorPressButton;
         }
     }
 }

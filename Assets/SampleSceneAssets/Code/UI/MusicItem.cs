@@ -1,7 +1,4 @@
-using FMOD.Studio;
 using FMODUnity;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,13 +11,13 @@ public class MusicItem : MonoBehaviour
     [SerializeField] private GameObject difficultyGameObject;
     [SerializeField] private Texture starFullTexture;
 
-    public EventInstance previewSong { get; private set; }
+    public StudioEventEmitter emitter;
 
     public void OnClick()
     {
         RuntimeManager.PlayOneShot("event:/UI/Click");
         SelectionMusic.instance.StopAllMusics();
-        previewSong.start();
+        emitter.Play();
     }
 
     public void SetFirstImage(Texture image)
@@ -50,6 +47,6 @@ public class MusicItem : MonoBehaviour
 
     public void SetPreviewSong(EventReference previewSong)
     {
-        this.previewSong = RuntimeManager.CreateInstance(previewSong);
+        emitter.EventReference = previewSong;
     }
 }
