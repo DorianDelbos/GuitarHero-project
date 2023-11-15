@@ -10,7 +10,7 @@ public class EndMenu : MonoBehaviour
     private void Start()
     {
         titleMeshPro.text = GameManager.instance.musicSelect.title;
-        scoreMeshPro.text = "final score : " + GameManager.instance.averageScore.ToString("D5");
+        scoreMeshPro.text = "final score : " + GameManager.instance.averageScore.ToString("D3");
     }
 
     public void ReturnSelectionMenu()

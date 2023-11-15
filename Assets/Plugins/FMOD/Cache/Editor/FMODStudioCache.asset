@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Fmod/GuitarHero/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638353142489712013
+  lastModified: 638355487692507942
   FileSizes:
   - Name: Desktop
     Value: 3616
@@ -191,7 +191,7 @@ MonoBehaviour:
   Path: Fmod/GuitarHero/Build/Desktop/TomSound.bank
   Name: TomSound
   StudioPath: bank:/TomSound
-  lastModified: 638353137507288897
+  lastModified: 638355487693599651
   FileSizes:
   - Name: Desktop
     Value: 16975936
@@ -235,7 +235,7 @@ MonoBehaviour:
   Path: Fmod/GuitarHero/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638353142489721981
+  lastModified: 638355487692507942
   FileSizes:
   - Name: Desktop
     Value: 1112
@@ -269,7 +269,7 @@ MonoBehaviour:
   - {fileID: -7890290445874002744}
   StringsBanks:
   - {fileID: -3511609877919554275}
-  cacheTime: 638353142489721981
+  cacheTime: 638355487693599651
   cacheVersion: 131608
 --- !u!114 &55696630915409928
 MonoBehaviour:

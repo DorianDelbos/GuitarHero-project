@@ -515,12 +515,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "By <b>Dorian DELBOS</b>\nSpecial thanks to <b>Enzo MANNARINO</b>\n\n\n<u>Musiques
-    :</u>\n\nTitre:  Les quatres saisons - Et\xE9 (Vivaldi)\r\nAuteur: Daniel Bautista\r\nSource:
-    https://www.danielbautista.com\r\nLicence: https://creativecommons.org/licenses/by-nc-sa/2.5/es/\r\nT\xE9l\xE9chargement:
-    https://www.auboutdufil.com\r\n\r\nTitre:  I Can't Stop\r\nAuteur: Punch Deck\r\nSource:
-    https://soundcloud.com/punch-deck\r\nLicence: https://creativecommons.org/licenses/by/4.0/deed.fr\r\nT\xE9l\xE9chargement:
-    https://www.auboutdufil.com"
+  m_text: 'By <b>Dorian DELBOS</b>
+
+    Special thanks to <b>Enzo MANNARINO</b>'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d2982e2c754498b4484c3cca5c4cf088, type: 2}
   m_sharedMaterial: {fileID: 5618579244250528462, guid: d2982e2c754498b4484c3cca5c4cf088,

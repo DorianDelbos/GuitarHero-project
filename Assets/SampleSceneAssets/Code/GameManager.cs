@@ -36,6 +36,20 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < scoreToAverage.Length; i++)
         {
             scoreToAverage[i] = 900;
+            MusicByScore.instance.SetParameter(i, scoreToAverage[i], averageScore);
+        }
+
+        switch (musicSelect.difficultyLvl)
+        {
+            case MusicData.Difficulty.Medium:
+                scoreToAverage[3] = 999;
+                break;
+            case MusicData.Difficulty.Easy:
+                scoreToAverage[2] = 999;
+                scoreToAverage[3] = 999;
+                break;
+            default:
+                break;
         }
 
         AverageCalculate();

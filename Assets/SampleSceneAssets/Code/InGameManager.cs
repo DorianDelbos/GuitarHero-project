@@ -33,7 +33,7 @@ public class InGameManager : MonoBehaviour
 
     private void UpdateScoreText()
     {
-        currentScoreMesh.text = "CURRENT SCORE   " + GameManager.instance.averageScore.ToString("D5");
+        currentScoreMesh.text = "CURRENT SCORE   " + GameManager.instance.averageScore.ToString("D3");
     }
 
     private string FormatTime(int seconds)
