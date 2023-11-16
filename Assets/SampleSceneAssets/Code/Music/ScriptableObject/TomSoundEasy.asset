@@ -24,7 +24,7 @@ MonoBehaviour:
   beatPerMinutes: 120
   difficulty: 3
   difficultyLvl: 2
-  timeInSeconds: 96
+  timeInSeconds: 97
   songByKey:
   - Guid:
       Data1: 555215541

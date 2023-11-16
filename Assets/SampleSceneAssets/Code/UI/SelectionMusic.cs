@@ -15,6 +15,8 @@ public class SelectionMusic : MonoBehaviour
     [SerializeField] private TextMeshProUGUI authorMesh;
     [SerializeField] private RawImage firstImage;
 
+    private List<MusicItem> musicItems = new List<MusicItem>();
+
     private void Awake()
     {
         instance = this;
@@ -22,8 +24,6 @@ public class SelectionMusic : MonoBehaviour
 
     private void Start()
     {
-        SetMusicData(GameAssets.instance.musicDatas[0]);
-
         foreach (MusicData data in GameAssets.instance.musicDatas)
         {
             GameObject musicItem = Instantiate(musicItemPrefab, musicItemListTransform);
@@ -37,7 +37,11 @@ public class SelectionMusic : MonoBehaviour
             musicItemScript.SetDifficulty(data.difficulty);
             musicItemScript.SetFirstImage(data.firstImage);
             musicItemScript.SetPreviewSong(data.previewSong);
+            musicItems.Add(musicItemScript);
         }
+
+        SetMusicData(GameAssets.instance.musicDatas[0]);
+        musicItems[0].OnClick();
 
         musicItemListTransform.GetComponent<VerticalLayoutGroup>().CalculateLayoutInputVertical();
     }

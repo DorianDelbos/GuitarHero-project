@@ -11,7 +11,7 @@ public class NoteSpawner : MonoBehaviour
 
     private void Start()
     {
-        GenerateRandomMap((int)(GameManager.instance.musicSelect.timeInSeconds / 60f * GameManager.instance.musicSelect.beatPerMinutes));
+        GenerateRandomMap((int)((GameManager.instance.musicSelect.timeInSeconds) / 60f * GameManager.instance.musicSelect.beatPerMinutes));
     }
 
     private void GenerateRandomMap(int length)
@@ -31,12 +31,12 @@ public class NoteSpawner : MonoBehaviour
                 break;
         }
 
-
-        for (int i = 0; i < length; i++)
+        float waitTime = 10 / 60f * GameManager.instance.musicSelect.beatPerMinutes;
+        for (int i = 0; i < length - 1; i++)
         {
             int rdmVal = Random.Range(0, valByDif);
             Vector3 position = spawners[rdmVal].transform.position;
-            position.z += 10 * i;
+            position.z += 10 * i + waitTime;
 
             GameObject note = Instantiate(notePrefab, position, Quaternion.identity, noteTransform);
             note.GetComponent<Renderer>().material.color = rhythmZone[rdmVal].colorPressButton;

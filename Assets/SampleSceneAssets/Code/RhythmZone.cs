@@ -68,7 +68,7 @@ public class RhythmZone : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         objectInTrigger = other.gameObject;
-        other.GetComponent<MeshRenderer>().material.color = Color.green;
+        other.GetComponent<MeshRenderer>().material.color = Color.white;
     }
 
     private void OnTriggerExit(Collider other)

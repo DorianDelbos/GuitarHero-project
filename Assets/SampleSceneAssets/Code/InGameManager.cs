@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -26,9 +27,16 @@ public class InGameManager : MonoBehaviour
 
         if (musicLength.value >= musicLength.maxValue)
         {
-            MusicByScore.instance.StopGame();
-            SceneManager.LoadScene("EndMenu");
+            StartCoroutine(waitBeforeStop());
         }
+    }
+
+    private IEnumerator waitBeforeStop()
+    {
+        yield return new WaitForSeconds(1f);
+
+        MusicByScore.instance.StopGame();
+        SceneManager.LoadScene("EndMenu");
     }
 
     private void UpdateScoreText()

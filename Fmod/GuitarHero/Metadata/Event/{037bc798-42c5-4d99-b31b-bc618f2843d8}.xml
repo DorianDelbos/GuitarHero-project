@@ -59,7 +59,7 @@
 			<destination>{b9d7ab5b-a3fa-477f-a36e-f3b59bcd8221}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{a87e7b44-cef3-4080-8837-fbbe9e754a9d}</destination>
+			<destination>{6132357c-1bfb-422f-8a8c-9e8d2736b51c}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{196d8643-b926-4e02-860f-139995dba4e0}" />
@@ -144,6 +144,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{dd8491a6-ceef-4a94-b51a-5f30b8887b5f}">
+		<property name="start">
+			<value>1</value>
+		</property>
 		<property name="length">
 			<value>96</value>
 		</property>
@@ -174,6 +177,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{f33111ca-761d-40b8-a5ab-791ef8533a32}">
+		<property name="start">
+			<value>1</value>
+		</property>
 		<property name="length">
 			<value>96</value>
 		</property>
@@ -204,6 +210,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{39515bed-1716-4722-aa01-7f7ed7e0ea90}">
+		<property name="start">
+			<value>1</value>
+		</property>
 		<property name="length">
 			<value>96</value>
 		</property>
@@ -234,6 +243,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{2d1a3912-1984-462a-b14a-fa8915368034}">
+		<property name="start">
+			<value>1</value>
+		</property>
 		<property name="length">
 			<value>96</value>
 		</property>

@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Fmod/GuitarHero/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638356704397710608
+  lastModified: 638357221135418524
   FileSizes:
   - Name: Desktop
-    Value: 201088
+    Value: 4458176
   Exists: 1
 --- !u!114 &-7120314315760072221
 MonoBehaviour:
@@ -71,7 +71,7 @@ MonoBehaviour:
   - {fileID: -5969480823806410600}
   MinDistance: 1
   MaxDistance: 20
-  Length: 96000
+  Length: 97000
 --- !u!114 &-6209930173507757348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   - {fileID: 1916504825516392221}
   MinDistance: 1
   MaxDistance: 20
-  Length: 96000
+  Length: 97000
 --- !u!114 &-5969480823806410600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   - {fileID: -7120314315760072221}
   MinDistance: 1
   MaxDistance: 20
-  Length: 96093
+  Length: 97093
 --- !u!114 &-5024265067888500727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,10 +191,10 @@ MonoBehaviour:
   Path: Fmod/GuitarHero/Build/Desktop/TomSound.bank
   Name: TomSound
   StudioPath: bank:/TomSound
-  lastModified: 638356716913798415
+  lastModified: 638357221137130679
   FileSizes:
   - Name: Desktop
-    Value: 16975936
+    Value: 16977056
   Exists: 1
 --- !u!114 &-3873842702857985530
 MonoBehaviour:
@@ -235,10 +235,10 @@ MonoBehaviour:
   Path: Fmod/GuitarHero/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638356704397720650
+  lastModified: 638357221135438470
   FileSizes:
   - Name: Desktop
-    Value: 1162
+    Value: 1202
   Exists: 1
 --- !u!114 &-3297977982666557546
 MonoBehaviour:
@@ -289,12 +289,13 @@ MonoBehaviour:
   - {fileID: 55696630915409928}
   - {fileID: 6793187383798209660}
   - {fileID: 4735210102826320380}
+  - {fileID: 7512117628739348659}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7890290445874002744}
   StringsBanks:
   - {fileID: -3511609877919554275}
-  cacheTime: 638356716913798415
+  cacheTime: 638357221137130679
   cacheVersion: 131608
 --- !u!114 &55696630915409928
 MonoBehaviour:
@@ -374,7 +375,7 @@ MonoBehaviour:
   - {fileID: -5913689342484582773}
   MinDistance: 1
   MaxDistance: 20
-  Length: 96000
+  Length: 97000
 --- !u!114 &4720341249396759537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,7 +403,7 @@ MonoBehaviour:
   - {fileID: -3873842702857985530}
   MinDistance: 1
   MaxDistance: 20
-  Length: 96000
+  Length: 97000
 --- !u!114 &4735210102826320380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,3 +459,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 86
+--- !u!114 &7512117628739348659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/MusicMenu
+  m_EditorClassIdentifier: 
+  Path: event:/UI/MusicMenu
+  Guid:
+    Data1: 1308444690
+    Data2: 1191872278
+    Data3: 1288884150
+    Data4: 530766739
+  Banks:
+  - {fileID: -7890290445874002744}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 96000
